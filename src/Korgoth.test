@@ -1,0 +1,97 @@
+"Hi! This is an example program of Korgoth Programming Language."
+
+"Main funtion starts with doMath fonction."
+doMath
+[
+
+	"Basic types are defined below"
+
+	newVariable1 = 5;
+	newVariable2 = 5.7;
+	newVariable1000 = 'This is a string';
+	booleanA = true;
+	booleanB = false;
+
+
+	"Some boolean expressions are defined here"
+
+	newBoolean = 6 < 5;
+	newBoolean2 = newVariable1 <= newVariable2;
+	newBoolean3 = ~(7.8 > 6);
+	newBoolean4 = (newVariable1 >= newVariable2) == (newVariable1 ~= newVariable2) ;
+	newBoolean5 = (booleanA or booleanB) and newBoolean2;
+
+
+	"Some mathematical expressions are shown below.
+	By the way, you can write multiple line comments if you end the sentence with Quote sign."
+
+	newVariable1++;
+	newVariable2--;
+	newVariable1 = 12 % 2 + 5;
+	newVariable2 = 12 / 6 - 7 * 5.8;
+	var = (|-15| * 9!) - 3^5.7;
+
+
+	"This language will support set and vector expressions,
+		but sets should be named with uppercase letters only and
+			vectors should be named with ('v' + digits) ."
+
+	A = {1, 2, 7.12 , -6.78, 'String object'};
+	B = {1, 3, -65.2, +2.26, 'Another string object'};
+	CRAZY = A U B;
+	B = A n B;
+	v1 = <3, 5.7>;
+	v2 = v1 x <-10.5, -2>;
+
+
+	"Our language has its own basic mathematical funtions"
+
+	var = sin(30) + cos(PI) - tan(5.7) * cot(85) % sec(PI);
+	var = sqrt( csc( PI + max( nrt(3,5), 7)) - ln(5) * e) / arctan( P(6,5)) ;
+	var = log( min(3,8), arcsin(PI / 7.5) - arccot(e) + C(5,2));
+
+	"Functions can be called."
+	var2 = newFunc(var);
+	newFunc2(var);
+]
+
+
+"You can also define new functions"
+
+function newFunc(var)
+[
+	def = sin(PI) <= 5;
+	innerVariable = 0;
+	for(i = 0; var or def; i++)
+	[
+
+		if (5 > 10)
+		[
+			"User can read inputs with take() function."
+			take(innerVariable);	
+		]
+
+		else
+		[
+			innerVariable = 0;
+		]
+
+	]
+
+	"User can print the string with show() function."
+	
+	show('following');
+	show(' result' + ' is' + sin(30));
+	show(innerVariable);
+	return 5!;
+]
+
+function newFunc2(var)
+[
+	def = arcsin(e);
+	while (def < 10)
+	[
+		def++;
+	]
+]
+
